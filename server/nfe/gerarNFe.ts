@@ -869,7 +869,7 @@ export function gerarNFe(ctx: ContextoGeracao, doc: DocumentoNFe): NFeGerada {
     tag('indFinal', indFinal),
     tag('indPres', doc.ide.presencial ?? (nfce ? 1 : 0)),
     tag('procEmi', 0),
-    tag('verProc', 'printControl web'),
+    tag('verProc', 'bm-LocaPrint web'),
     ...(doc.ide.referencias || []).map((ch) => grupoObrigatorio('NFref', tag('refNFe', ch.replace(/\D/g, '')))),
   );
 

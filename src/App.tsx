@@ -131,7 +131,7 @@ export default function App() {
   const tela = TELAS[tab];
   const item = itemDoMenu(tab);
   const recurso = tela?.recurso ? resources.find((r) => r.name === tela.recurso) || null : null;
-  const [headerTitle, headerSubtitle] = tela?.titulo ?? [item?.label ?? 'PrintControl', item?.descricao ?? ''];
+  const [headerTitle, headerSubtitle] = tela?.titulo ?? [item?.label ?? 'bm-LocaPrint', item?.descricao ?? ''];
 
   const props: TelaProps = {
     usuario,

@@ -224,7 +224,7 @@ export function createClientesRouter() {
       if (!para.length) return res.json({ enviado: false, motivo: 'Cliente sem e-mail válido: o PDF foi baixado.' });
       const { nome, pdf } = await pdfDoContrato(c.id, grupo(res));
       const [[e]] = await pool.query<any[]>('SELECT nome_comercial, apelido, email_financeiro FROM empresas_filiais WHERE id = ?', [Number(res.locals.empresaId)]);
-      const empresa = e?.nome_comercial || e?.apelido || 'PrintControl';
+      const empresa = e?.nome_comercial || e?.apelido || 'bm-LocaPrint';
       await enviarEmail({
         para,
         assunto: `Contrato - ${empresa}`,

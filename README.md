@@ -1,4 +1,4 @@
-# PrintControl Web
+# bm-LocaPrint Web
 
 Controle de locação de impressoras — conversão do PrintControl Delphi (UniGUI, `D:\bmsoftweb\printcontrol`)
 para a mesma stack, layout e padrões do crmweb: Express + Vite + React 19 + Tailwind 4 + mysql2, com telas de

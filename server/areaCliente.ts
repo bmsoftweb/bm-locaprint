@@ -117,7 +117,7 @@ th { text-align: center; font-weight: normal; background: #eee; }
 td.c { text-align: center; }
 </style></head><body>
 <h1>IMPRESSORAS LOCADAS</h1>
-<div class="topo"><span>printControl</span><span>${esc(empresaLocadora)}</span><span>Emissão: ${esc(emissao)}</span></div>
+<div class="topo"><span>bm-LocaPrint</span><span>${esc(empresaLocadora)}</span><span>Emissão: ${esc(emissao)}</span></div>
 <table><thead><tr><th style="width:11%">ID#</th><th style="width:13%">MARCA</th><th style="width:15%">MODELO</th>
 <th style="width:20%">NR. SÉRIE</th><th style="width:20%">SETOR</th><th style="width:21%">LEITURA</th></tr></thead>
 <tbody>${linhas}</tbody></table></body></html>`;

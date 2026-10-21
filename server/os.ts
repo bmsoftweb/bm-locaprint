@@ -375,7 +375,7 @@ Nota da avaliação: @nota<br>
 Comentário na avaliação: @obs_avaliacao<br><br>
 Sugiro que você dê uma atenção especial para esse cliente.<br>
 Atenciosamente,<br><br>
-PrintControl - Sistema para Controle de Locação de Impressoras
+bm-LocaPrint - Sistema para Controle de Locação de Impressoras
 </font></body></html>`;
 
 const EMAIL_REQUISICAO = `<html><body><font face="Courier New">

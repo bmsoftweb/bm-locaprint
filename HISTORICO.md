@@ -1,4 +1,10 @@
-# Histórico de versões — PrintControl Web
+# Histórico de versões — bm-LocaPrint Web
+
+## 0.0.5 — 20/10/2026
+- Sistema renomeado para bm-LocaPrint: login, menu, aba do navegador, impressos de locação e da área do cliente, texto da OS e verProc da NF-e.
+- Tela de login com o título "Gestão de Locação de Impressoras" ("Locação de Impressoras" em azul).
+- Grades: ícone ☰ da coluna indicadora centralizado no cabeçalho.
+- Repositório renomeado para bmsoftweb/bm-locaprint.
 
 ## 0.0.4 — 06/10/2026
 - Pré-leituras: Capturar Leitura e Listar Leituras passam a usar as coletas do Scan Impressoras (printers_000000.leitura) pelo nr. de série.

@@ -156,7 +156,7 @@ export const AreaCliente: React.FC<{ cliente: ClienteSessao; onSair: () => void;
               <Printer className="w-5 h-5 text-white" />
             </div>
             <div className="min-w-0">
-              <div className="text-sm font-black tracking-wider uppercase text-stone-800 dark:text-stone-100 leading-tight">PrintControl</div>
+              <div className="text-sm font-black tracking-wider uppercase text-stone-800 dark:text-stone-100 leading-tight">bm-LocaPrint</div>
               <div className="text-[11px] text-stone-500 dark:text-stone-400 truncate">Área do Cliente{cliente.grupoApelido ? ` • ${cliente.grupoApelido}` : ''}</div>
             </div>
           </div>

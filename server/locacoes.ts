@@ -152,7 +152,7 @@ body { font-family: Arial, sans-serif; font-size: 10px; color: #111; }
 h1 { font-size: 14px; margin: 0 0 4px; } table { width: 100%; border-collapse: collapse; }
 th { text-align: left; border-bottom: 1px solid #333; padding: 4px; } td { border-bottom: 1px solid #ddd; padding: 3px 4px; }
 </style></head><body>
-<div class="cab"><div><b>printControl</b><br>${esc(d.empresa)}</div><div style="text-align:right">Emissão: ${esc(d.emissao)}<br>
+<div class="cab"><div><b>bm-LocaPrint</b><br>${esc(d.empresa)}</div><div style="text-align:right">Emissão: ${esc(d.emissao)}<br>
 Mês Referência: ${String(d.mes).padStart(2, '0')}/${d.ano} - Dia da Leitura: ${String(d.dia).padStart(2, '0')}</div></div>
 <h1>RELATÓRIO LEITURAS NÃO EFETUADAS</h1>
 <table><thead><tr><th>MARCA</th><th>MODELO</th><th>NR. SÉRIE</th><th>SETOR</th><th></th><th>CLIENTE</th></tr></thead><tbody>${linhas}</tbody></table>

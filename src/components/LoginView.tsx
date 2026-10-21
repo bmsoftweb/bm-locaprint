@@ -97,7 +97,7 @@ export const LoginView: React.FC<LoginViewProps> = ({
       <div className="w-9 h-9 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-200/50 dark:shadow-none shrink-0">
         <Printer className="w-5 h-5 text-white" />
       </div>
-      <span className="text-sm font-black tracking-wider uppercase text-stone-800 dark:text-stone-100">PrintControl</span>
+      <span className="text-sm font-black tracking-wider uppercase text-stone-800 dark:text-stone-100">bm-LocaPrint</span>
     </div>
   );
 
@@ -134,9 +134,13 @@ export const LoginView: React.FC<LoginViewProps> = ({
 
         <div className="flex-1 flex flex-col justify-center">
           <h1 className="text-6xl font-black leading-[0.95] tracking-tight text-stone-900 dark:text-white">
-            Print
+            Gestão de
             <br />
-            Control
+            <span className="text-blue-600 dark:text-blue-400">
+              Locação de
+              <br />
+              Impressoras
+            </span>
           </h1>
           <p className="mt-4 text-sm font-medium max-w-xs text-stone-500 dark:text-stone-400">
             Controle de locação de impressoras: contratos, leituras, faturamento, boletos e ordens de serviço.
@@ -331,7 +335,7 @@ export const LoginView: React.FC<LoginViewProps> = ({
           </form>
 
           <div className="flex items-center justify-between mt-8 pt-4 border-t border-stone-200 dark:border-stone-800 text-[10px] font-bold uppercase tracking-wider text-stone-400 dark:text-stone-500">
-            <span>PrintControl by BMsoft Sistemas</span>
+            <span>bm-LocaPrint by BMsoft Sistemas</span>
             <span className="normal-case">v{__APP_VERSION__} • © {new Date().getFullYear()}</span>
           </div>
         </div>

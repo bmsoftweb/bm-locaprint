@@ -23,7 +23,7 @@ async function startServer() {
   }
 
   app.listen(PORT, '0.0.0.0', async () => {
-    console.log(`PrintControl rodando em http://0.0.0.0:${PORT}`);
+    console.log(`bm-LocaPrint rodando em http://0.0.0.0:${PORT}`);
     // Os bancos de trabalho vêm do Servidor digitado no login; aqui só confere o banco administrativo
     try {
       const [[r]] = await poolAdmin.query<any[]>('SELECT DATABASE() AS db, COUNT(*) AS n FROM servidores');

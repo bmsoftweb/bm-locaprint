@@ -295,7 +295,10 @@ export function GradeLista<T extends Record<string, any>>({
   /** Presas à esquerda: as visíveis até a última com "fixa" (as anteriores vão junto, senão a fixa encobre) */
   const ultimaFixa = colunas.reduce((u, c, i) => (c.fixa ? i : u), -1);
   const fixas = new Set(colunas.slice(0, ultimaFixa + 1).map((c) => c.id));
-  const thBase = 'px-3 py-2.5 text-center font-semibold text-stone-600 dark:text-stone-300 whitespace-nowrap bg-stone-50 dark:bg-stone-950 border-b border-r border-stone-200 dark:border-stone-800';
+  const thCelula = 'text-center font-semibold text-stone-600 dark:text-stone-300 whitespace-nowrap bg-stone-50 dark:bg-stone-950 border-b border-r border-stone-200 dark:border-stone-800';
+  const thBase = `px-3 py-2.5 ${thCelula}`;
+  /** Cabeçalho da coluna indicadora: sem o px-3 das outras, senão o ☰ fica fora do centro */
+  const thIndicador = `sticky left-0 z-20 w-[30px] min-w-[30px] max-w-[30px] px-0 ${thCelula}`;
   const nCols = colunas.length + 1 + (comSobra ? 1 : 0) + (acoes ? 1 : 0);
 
   const [esquerdas, setEsquerdas] = useState<Record<string, number>>({});
@@ -334,7 +337,7 @@ export function GradeLista<T extends Record<string, any>>({
         <thead className="sticky top-0 z-10">
           {grupos && (
             <tr>
-              <th className={`sticky left-0 z-20 w-[30px] min-w-[30px] max-w-[30px] ${thBase} py-1`} />
+              <th className={`${thIndicador} py-1`} />
               {grupos.map((g, i) => (
                 <th key={i} colSpan={g.n} className={`${thBase} py-1 text-[11px]`}>
                   {g.titulo}
@@ -345,7 +348,7 @@ export function GradeLista<T extends Record<string, any>>({
             </tr>
           )}
           <tr>
-            <th className={`sticky left-0 z-20 w-[30px] min-w-[30px] max-w-[30px] px-0 ${thBase}`}>
+            <th className={`${thIndicador} py-2.5`}>
               <button
                 type="button"
                 onClick={(e) => abrirMenu(e.currentTarget)}

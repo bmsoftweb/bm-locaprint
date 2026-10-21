@@ -130,7 +130,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             {(empresa.grupoApelido || 'PC').slice(0, rec ? 1 : 3).toUpperCase()}
           </div>
           <div className={rec ? 'hidden' : 'min-w-0'}>
-            <h1 className="text-sm font-bold text-stone-900 dark:text-white leading-tight truncate">PrintControl</h1>
+            <h1 className="text-sm font-bold text-stone-900 dark:text-white leading-tight truncate">bm-LocaPrint</h1>
             <p className="text-[11px] text-stone-500 dark:text-stone-400 truncate" title={`Servidor ${servidor?.id ?? '?'}${servidor?.descricao ? ` (${servidor.descricao})` : ''} • Grupo/Empresa ativos: ${empresa.grupoId}/${empresa.id}`}>
               {empresa.apelido || empresa.nome}
             </p>
