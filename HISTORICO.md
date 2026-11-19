@@ -1,5 +1,9 @@
 # Histórico de versões — bm-LocaPrint Web
 
+## 0.0.6 — 19/11/2026
+
+- Dicas (tooltips) no padrão BMsoft em todo o app: caixa escura com seta no lugar da dica nativa do navegador.
+
 ## 0.0.5 — 20/10/2026
 - Sistema renomeado para bm-LocaPrint: login, menu, aba do navegador, impressos de locação e da área do cliente, texto da OS e verProc da NF-e.
 - Tela de login com o título "Gestão de Locação de Impressoras" ("Locação de Impressoras" em azul).
